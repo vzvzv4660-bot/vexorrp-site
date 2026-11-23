@@ -149,3 +149,9 @@ h1{font-size:clamp(64px,8vw,112px);letter-spacing:-5px;line-height:.9;margin:26p
 .character-img{width:100%;height:auto;max-height:660px;right:0;left:auto;bottom:-8px;object-fit:contain;object-position:right bottom}
 @media(max-width:900px){.hero-art{right:-2%;width:57%;height:570px;top:35px}.character-img{width:100%;height:auto;max-height:600px}}
 @media(max-width:650px){.hero-art{top:auto;bottom:0;right:-5%;width:105%;height:430px}.character-img{width:100%;height:auto;max-height:430px;right:0;bottom:-5px;object-fit:contain;object-position:right bottom}}
+
+
+/* VEXOR RP asset visibility and responsive hero fix */
+.hero-art{display:block!important;visibility:visible!important;opacity:1!important;z-index:1}
+.character-img{display:block!important;visibility:visible!important;opacity:1!important;max-width:none!important;height:auto!important;width:min(100%,680px)!important;max-height:660px!important;object-fit:contain!important;object-position:right bottom!important}
+@media(max-width:650px){.hero-art{width:112%!important;right:-6%!important;height:430px!important;bottom:0!important;top:auto!important}.character-img{width:100%!important;max-height:430px!important;right:0!important;bottom:-5px!important}}
