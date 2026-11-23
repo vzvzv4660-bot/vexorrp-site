@@ -1,0 +1,48 @@
+/* VEXOR RP theme switcher */
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;border:1px solid #e6e1d6;background:#fff;color:#282828;padding:10px 13px;border-radius:3px;font:800 10px Manrope,Arial,sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.theme-toggle:hover{border-color:#e4ad12;color:#b77c00}
+.store-topbar .theme-toggle{margin-left:auto;margin-right:14px}
+.dark-theme{--paper:#111216;--ink:#f1f0ec;--muted:#aaa;--line:#303139;background:#111216!important;color:#f1f0ec!important;color-scheme:dark}
+.dark-theme .header,.dark-theme .store-topbar{background:#191a20!important;border-color:#303139!important}
+.dark-theme .announcement{background:#090a0d}
+.dark-theme .nav-link,.dark-theme .store-topbar nav a{color:#aaa}
+.dark-theme .nav-link:hover,.dark-theme .nav-link.active{color:#fff}
+.dark-theme .login-btn,.dark-theme .theme-toggle{background:#22242b;color:#f4f2ec;border-color:#3b3d46}
+.dark-theme .hero{background:linear-gradient(115deg,#15161b,#1c1d23)!important}
+.dark-theme .hero-grid{background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px)}
+.dark-theme .hero-glow{opacity:.7}
+.dark-theme .hero-copy,.dark-theme .section-heading>p,.dark-theme .shop-copy p,.dark-theme .store-hero-copy p,.dark-theme .store-title-row p{color:#aaa}
+.dark-theme .hero-meta,.dark-theme .hero-meta strong,.dark-theme .hero-bottom{color:#aaa}
+.dark-theme .bonus-note{background:#26231a;color:#f4e9c7;border-color:#705719}
+.dark-theme .btn-ghost{background:#24252b;color:#eee;border-color:#444650}
+.dark-theme .stats,.dark-theme .stat,.dark-theme .products-heading{border-color:#303139}
+.dark-theme .feature-card{background:#24252c;color:#f1f0ec}
+.dark-theme .feature-card:not(.feature-large) p{color:#b6b5b1}
+.dark-theme .feature-large{background:#c8940c;color:#171717}
+.dark-theme .news-section{background:#17181e}
+.dark-theme .news-card,.dark-theme .news-info{background:#22232a;color:#f1f0ec}
+.dark-theme .news-info p{color:#aaa}
+.dark-theme .news-art-three{background:#30313a;color:#eee}
+.dark-theme .shop-visual{background:#282930}
+.dark-theme .start-section{background:#d6a316;color:#171717}
+.dark-theme .footer{background:#0b0c0f;color:#aaa}
+.dark-theme .footer-bottom{border-color:#292a30}
+.dark-theme .modal{background:#202127;color:#f2f1ed;border-color:#3b3d46}
+.dark-theme .modal p,.dark-theme .modal-note{color:#aaa}
+.dark-theme .modal input{background:#15161b;color:#fff;border-color:#444650}
+.dark-theme .forum-main{background:radial-gradient(circle at 75% 35%,#f5b40018,transparent 32%),#111216!important}
+.dark-theme .forum-card{background:#1d1e24;border-color:#383941;box-shadow:0 25px 70px #0005}
+.dark-theme .forum-card p{color:#aaa}
+.dark-theme .forum-status{background:#302916;border-color:#5b4818;color:#f0d78e}
+.dark-theme .store-page{background:#111216!important;color:#f1f0ec!important}
+.dark-theme .store-hero,.dark-theme .store-categories-wrap{background:#15161b!important;border-color:#303139}
+.dark-theme .store-title-row,.dark-theme .store-products-heading{border-color:#34353d}
+.dark-theme .store-category,.dark-theme .store-product{background:#202127;color:#f1f0ec;border-color:#393a43}
+.dark-theme .store-category small,.dark-theme .store-products-heading span,.dark-theme .store-rate,.dark-theme .store-disclaimer{color:#aaa}
+.dark-theme .store-product-info{color:#f1f0ec}
+.dark-theme .store-bottom{background:#0b0c0f;color:#aaa}
+.dark-theme .store-logo{color:#f1f0ec}
+.dark-theme .store-account{color:#171717}
+.dark-theme .menu-toggle{color:#f4f2ec}
+@media(max-width:900px){.header .theme-toggle span{display:none}.header .theme-toggle{padding:9px 11px}.store-topbar .theme-toggle{margin-right:8px;padding:8px 9px}.store-topbar .theme-toggle span{display:none}}
+@media(max-width:650px){.header{gap:8px}.header .theme-toggle{order:2}.header .login-btn{padding:9px 10px;font-size:9px}.store-topbar{gap:7px}.store-topbar nav{flex:1;justify-content:center}.store-topbar .theme-toggle{margin-left:0;margin-right:0}}

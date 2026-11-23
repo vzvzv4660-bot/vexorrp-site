@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4a900">
+  <title>Форум VEXOR RP — Сообщество игроков</title>
+  <meta name="description" content="Форум и сообщество VEXOR RP. Обсуждения проекта, новости, вопросы игроков и предложения.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://vexorplay.online/forum.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VEXOR RP">
+  <meta property="og:title" content="Форум VEXOR RP — Сообщество игроков">
+  <meta property="og:description" content="Форум и сообщество VEXOR RP. Обсуждения проекта, новости, вопросы игроков и предложения.">
+  <meta property="og:url" content="https://vexorplay.online/forum.html">
+  <meta property="og:image" content="https://vexorplay.online/assets/vexor-characters.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Форум VEXOR RP — Сообщество игроков">
+  <meta name="twitter:description" content="Форум и сообщество VEXOR RP. Обсуждения проекта, новости, вопросы игроков и предложения.">
+  <meta name="twitter:image" content="https://vexorplay.online/assets/vexor-characters.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/vexor-favicon.png?v=3">
+  <link rel="shortcut icon" href="/assets/favicon.ico?v=3" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=3">
+  <style>
+    .forum-main{min-height:calc(100vh - 220px);display:grid;place-items:center;padding:70px 24px;background:radial-gradient(circle at 75% 35%,#f5b40022,transparent 32%),#faf9f6}
+    .forum-card{width:min(100%,760px);padding:clamp(30px,6vw,68px);background:#fff;border:1px solid #eee9dd;box-shadow:0 25px 70px #3828000b;position:relative;overflow:hidden}
+    .forum-card:after{content:"V";position:absolute;right:20px;bottom:-100px;font-size:330px;line-height:1;font-weight:900;color:#f5b4000c;pointer-events:none}
+    .forum-kicker{font-size:9px;letter-spacing:3px;font-weight:900;color:#a17a1b}.forum-card h1{font-size:clamp(38px,7vw,72px);letter-spacing:-3px;margin:18px 0}.forum-card h1 em{font-style:normal;color:#e99b00}.forum-card p{max-width:510px;color:#777;font-size:13px;line-height:1.9}.forum-status{display:inline-flex;align-items:center;gap:9px;margin-top:24px;padding:11px 14px;background:#fff9e8;border:1px solid #f1dfad;color:#7e641c;font-size:9px;font-weight:900;letter-spacing:1px}.forum-status i{width:7px;height:7px;border-radius:50%;background:#eaaa00}.forum-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    @media(max-width:650px){.forum-card{padding:30px 23px}.forum-card:after{font-size:220px;right:-15px;bottom:-65px}.forum-card h1{letter-spacing:-2px}}
+  </style>
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> VEXOR RP • СООБЩЕСТВО ИГРОКОВ</div>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="VEXOR RP"><span class="brand-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <nav id="nav">
+      <a class="nav-link" href="index.html">Главная</a>
+      <a class="nav-link" href="index.html#news">Новости</a>
+      <a class="nav-link active" href="https://vexor-rp-forum.netlify.app/" target="_blank" rel="noopener noreferrer">Форум</a>
+      <a class="nav-link" href="store.html">Магазин</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить чёрную тему" title="Переключить тему">☾ <span>Тема</span></button>
+    <a class="login-btn" href="index.html#start">Начать играть</a>
+  </header>
+  <main class="forum-main">
+    <section class="forum-card">
+      <span class="forum-kicker">VEXOR COMMUNITY / FORUM</span>
+      <h1>ФОРУМ <em>VEXOR RP.</em></h1>
+      <p>Здесь будут обсуждения проекта, новости сообщества, вопросы игроков, предложения и разделы игровых организаций.</p>
+      <div class="forum-status"><i></i> ФОРУМ ГОТОВИТСЯ К ОТКРЫТИЮ</div>
+      <div class="forum-actions"><a class="btn btn-primary" href="index.html">На главную <span>↗</span></a><a class="btn btn-ghost" href="store.html">Открыть магазин <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-top"><a class="brand brand-footer" href="index.html"><span class="brand-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a><p>ТВОЙ МИР. ТВОИ ПРАВИЛА.</p><div class="footer-links"><a href="index.html#news">Новости</a><a href="https://vexor-rp-forum.netlify.app/" target="_blank" rel="noopener noreferrer">Форум</a><a href="store.html">Магазин</a></div></div><div class="footer-bottom"><span>© 2026 VEXOR RP. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span><span>СДЕЛАНО ДЛЯ ИГРОКОВ <b>✦</b></span></div></footer>
+  <script src="app.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
