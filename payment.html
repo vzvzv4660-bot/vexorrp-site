@@ -1,79 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#e8ad00">
-  <title>Оплата — VEXOR RP</title>
-  <meta name="description" content="Инструкция по оплате заказа VEXOR RP через Kaspi.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="store-page.css">
-  <link rel="stylesheet" href="payment.css">
-  <link rel="stylesheet" href="theme.css">
-  <link rel="icon" type="image/png" href="/assets/vexor-favicon.png">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171717">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/vexor-favicon.png?v=3">
+<link rel="shortcut icon" href="/assets/favicon.ico?v=3" type="image/x-icon">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=3">
+<title>Оформление заказа — VEXOR RP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="store-page.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="payment.css">
 </head>
 <body class="store-page">
-  <div class="store-topbar">
-    <a class="store-logo" href="index.html"><span class="store-logo-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a>
-    <nav><a href="index.html">Главная</a><a href="store.html">Магазин</a></nav>
-    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему" title="Переключить тему">☾ <span>Тема</span></button>
-    <a class="store-account" href="https://t.me/xEgorkaaSV" target="_blank" rel="noopener noreferrer">ПОДДЕРЖКА <b>↗</b></a>
-  </div>
-
-  <main class="payment-main">
-    <a class="payment-back" href="store.html">← Вернуться в магазин</a>
-    <section class="payment-heading">
-      <span class="store-kicker">VEXOR STORE / CHECKOUT</span>
-      <h1>ОПЛАТА <em>ЗАКАЗА</em></h1>
-      <p>Перевод через Kaspi и подтверждение заказа администратором.</p>
-    </section>
-
-    <section class="payment-layout">
-      <div class="payment-panel">
-        <span class="payment-step">01 / ЗАКАЗ</span>
-        <h2>Твой заказ</h2>
-        <div class="payment-order-row"><span>Товар</span><strong id="productName">Загрузка...</strong></div>
-        <div class="payment-order-row"><span>Стоимость</span><strong class="payment-total" id="productPrice">—</strong></div>
-        <label class="payment-label" for="gameNick">Игровой ник</label>
-        <input class="payment-input" id="gameNick" maxlength="32" autocomplete="off" placeholder="Например, Ivanov_ Ivan" required>
-        <p class="payment-hint">Проверь ник перед отправкой — по нему будет оформляться выдача.</p>
-      </div>
-
-      <div class="payment-panel">
-        <span class="payment-step">02 / KASPI</span>
-        <h2>Перевод на карту</h2>
-        <p class="payment-copy">Переведи точную сумму заказа на указанную ниже карту Kaspi.</p>
-        <div class="payment-card">
-          <div class="payment-card-top"><span>KASPI</span><span>VEXOR RP</span></div>
-          <div class="payment-card-number" id="cardNumber">Номер карты не настроен</div>
-          <div class="payment-card-bottom"><span>Получатель</span><strong id="cardHolder">VEXOR RP</strong></div>
-        </div>
-        <button class="payment-copy-button" id="copyCard" type="button">Скопировать номер карты</button>
-        <p class="payment-hint">Вставь свой номер карты и имя получателя в файл <code>payment-config.js</code> перед публикацией. Не указывай CVV, срок действия или SMS-коды.</p>
-      </div>
-
-      <div class="payment-panel payment-confirm">
-        <span class="payment-step">03 / ПОДТВЕРЖДЕНИЕ</span>
-        <h2>Отправь подтверждение</h2>
-        <ol>
-          <li>Соверши перевод через Kaspi.</li>
-          <li>Открой Telegram по кнопке ниже.</li>
-          <li>Отправь подготовленное сообщение и прикрепи чек вручную.</li>
-          <li>Дождись, пока администратор проверит поступление денег.</li>
-        </ol>
-        <a class="payment-telegram" id="telegramLink" href="https://t.me/xEgorkaaSV" target="_blank" rel="noopener noreferrer">Я ОПЛАТИЛ — ОТПРАВИТЬ В TELEGRAM <b>↗</b></a>
-        <p class="payment-warning">Важно: скриншот чека сам по себе не подтверждает оплату. Заказ будет принят только после проверки фактического поступления денег в Kaspi.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="store-bottom"><a class="store-logo" href="index.html"><span class="store-logo-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a><span>© 2026 VEXOR RP. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span><a href="store.html">В МАГАЗИН ↗</a></footer>
-  <div class="store-toast" id="storeToast" role="status" aria-live="polite"></div>
-  <script src="payment-config.js"></script>
-  <script src="payment.js"></script>
-  <script src="theme.js"></script>
-</body>
-</html>
+<header class="store-topbar"><a class="store-logo" href="index.html"><span class="store-logo-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a><nav><a href="index.html">Главная</a><a href="store.html">Магазин</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему">☾ <span>Тема</span></button></header>
+<main class="payment-wrap">
+  <a class="payment-back" href="store.html">← Вернуться в магазин</a>
+  <section class="payment-panel">
+    <span class="store-kicker">VEXOR STORE / ORDER</span>
+    <h1>ОФОРМЛЕНИЕ <em>ЗАКАЗА</em></h1>
+    <p class="payment-lead">Проверь выбранный товар и отправь заявку администратору проекта.</p>
+    <div class="payment-summary"><span>ВЫБРАННЫЙ ТОВАР</span><strong id="productName">Товар не выбран</strong><b id="productPrice">—</b></div>
+    <label for="playerNick">ТВОЙ ИГРОВОЙ НИКНЕЙМ</label>
+    <input id="playerNick" type="text" maxlength="32" placeholder="Например, Ivan_Smith" autocomplete="off">
+    <div class="payment-note"><strong>Оплата через Kaspi</strong><p>Реквизиты для оплаты предоставляются администратором после подтверждения заказа. Не отправляй данные карты, CVV, пароль или SMS-коды в Telegram.</p></div>
+    <button id="sendOrder" class="payment-submit" type="button">ОТПРАВИТЬ ЗАЯВКУ В TELEGRAM <span>↗</span></button>
+    <p class="payment-footnote" id="paymentStatus" role="status">После перехода в Telegram проверь текст заявки и отправь его администратору.</p>
+  </section>
+</main>
+<footer class="store-bottom"><a class="store-logo" href="index.html"><span class="store-logo-mark">V</span><span>VEXOR<small>ROLE PLAY</small></span></a><span>© 2026 VEXOR RP</span><a href="store.html">МАГАЗИН ↗</a></footer>
+<script src="payment.js"></script><script src="theme.js"></script>
+</body></html>

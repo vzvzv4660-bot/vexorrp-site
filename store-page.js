@@ -1,7 +1,2 @@
-const toast=document.getElementById('storeToast');let toastTimer;
-function notifyStore(message){if(!toast)return;toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3500)}
-document.querySelectorAll('.store-category').forEach(button=>button.addEventListener('click',()=>{
-  const filter=button.dataset.storeFilter;
-  document.querySelectorAll('.store-category').forEach(item=>item.classList.toggle('is-active',item===button));
-  document.querySelectorAll('.store-product').forEach(card=>{card.hidden=filter!=='all'&&card.dataset.storeType!==filter});
-}));
+const toast=document.getElementById('storeToast');let toastTimer;function notifyStore(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3500)}
+document.querySelectorAll('.store-category').forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.storeFilter;document.querySelectorAll('.store-category').forEach(item=>item.classList.toggle('is-active',item===button));document.querySelectorAll('.store-product').forEach(card=>{card.hidden=filter!=='all'&&card.dataset.storeType!==filter})}));
