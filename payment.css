@@ -10,3 +10,31 @@
 .kaspi-card-number{position:relative;z-index:1;margin:29px 0 24px;font-size:clamp(19px,4vw,25px);font-weight:700;letter-spacing:1.4px;white-space:nowrap}
 .kaspi-card-bottom{font-size:10px;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,.88)}.kaspi-card-mark{font-size:9px;letter-spacing:1.5px}
 @media(max-width:420px){.kaspi-card{min-height:170px;padding:19px}.kaspi-card-number{letter-spacing:.6px;margin:25px 0 21px}}
+
+
+/* Wide desktop payment layout */
+@media (min-width: 760px) {
+  .payment-wrap{max-width:1120px;margin:42px auto 64px}
+  .payment-panel{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(340px,.92fr);
+    column-gap:34px;
+    row-gap:0;
+    align-items:start;
+    padding:clamp(28px,3.4vw,44px);
+  }
+  .payment-panel > .store-kicker,
+  .payment-panel > h1,
+  .payment-panel > .payment-lead{grid-column:1 / -1}
+  .payment-panel > .payment-summary{grid-column:1;grid-row:4}
+  .payment-panel > label{grid-column:1;grid-row:5}
+  .payment-panel > input{grid-column:1;grid-row:6}
+  .payment-panel > .kaspi-card{grid-column:2;grid-row:4 / span 2;margin:22px 0 16px}
+  .payment-panel > .payment-note{grid-column:2;grid-row:6;margin:0 0 16px}
+  .payment-panel > .payment-submit{grid-column:2;grid-row:7}
+  .payment-panel > .payment-footnote{grid-column:2;grid-row:8}
+}
+@media (max-width:759px) {
+  .payment-wrap{max-width:600px}
+  .payment-panel{display:block}
+}
