@@ -22,8 +22,13 @@
     <div class="payment-summary"><span>ВЫБРАННЫЙ ТОВАР</span><strong id="productName">Товар не выбран</strong><b id="productPrice">—</b></div>
     <label for="playerNick">ТВОЙ ИГРОВОЙ НИКНЕЙМ</label>
     <input id="playerNick" type="text" maxlength="32" placeholder="Например, Ivan_Smith" autocomplete="off">
-    <div class="payment-note"><strong>Оплата через Kaspi</strong><p>Реквизиты для оплаты предоставляются администратором после подтверждения заказа. Не отправляй данные карты, CVV, пароль или SMS-коды в Telegram.</p></div>
-    <button id="sendOrder" class="payment-submit" type="button">ОТПРАВИТЬ ЗАЯВКУ В TELEGRAM <span>↗</span></button>
+    <div class="kaspi-card" aria-label="Карточка Kaspi, номер скрыт">
+      <div class="kaspi-card-top"><span class="kaspi-brand">kaspi<span>.кz</span></span><span class="kaspi-chip" aria-hidden="true"></span></div>
+      <div class="kaspi-card-number">•••• &nbsp;•••• &nbsp;•••• &nbsp;1234</div>
+      <div class="kaspi-card-bottom"><span>VEXOR RP</span><span class="kaspi-card-mark">KASPI GOLD</span></div>
+    </div>
+    <div class="payment-note"><strong>Оплата через Kaspi</strong><p>Нажми кнопку ниже, чтобы запросить реквизиты у администратора в Telegram. Не отправляй CVV, пароли или SMS-коды.</p></div>
+    <button id="sendOrder" class="payment-submit" type="button">ПОЛУЧИТЬ РЕКВИЗИТЫ В TELEGRAM <span>↗</span></button>
     <p class="payment-footnote" id="paymentStatus" role="status">После перехода в Telegram проверь текст заявки и отправь его администратору.</p>
   </section>
 </main>
